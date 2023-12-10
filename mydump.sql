@@ -1089,7 +1089,7 @@ CREATE TABLE `animal_command` (
   KEY `fk_animal_command_commands1_idx` (`commands_id`),
   CONSTRAINT `fk_animal_command_animals1` FOREIGN KEY (`animals_id`) REFERENCES `animals` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_animal_command_commands1` FOREIGN KEY (`commands_id`) REFERENCES `commands` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1118,7 +1118,7 @@ CREATE TABLE `animals` (
   UNIQUE KEY `idnamesbase_UNIQUE` (`id`),
   KEY `fk_animals_kinds1_idx` (`kinds_id`),
   CONSTRAINT `fk_animals_kinds1` FOREIGN KEY (`kinds_id`) REFERENCES `kinds` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1127,7 +1127,7 @@ CREATE TABLE `animals` (
 
 LOCK TABLES `animals` WRITE;
 /*!40000 ALTER TABLE `animals` DISABLE KEYS */;
-INSERT INTO `animals` VALUES (1,'Funny','2000-01-01',1),(2,'Crossy','2023-01-05',1),(3,'Tif','2022-05-09',1),(7,'Ilon','2018-06-08',3),(8,'Mike','2023-09-10',3),(9,'Sinner','2015-08-26',3),(10,'Gross','2014-09-30',4),(11,'Full','2020-02-04',4),(12,'Wanessa','2021-03-08',4),(13,'Pina','2022-09-22',5),(14,'Bob','2018-10-11',5),(15,'Aduard','2017-06-17',5),(16,'Masha','2013-08-16',6),(17,'Nitro','2021-12-12',6),(18,'Dc','2016-06-06',6),(19,'Square','2019-01-05',6);
+INSERT INTO `animals` VALUES (1,'Funny','2000-01-01',1),(2,'Crossy','2023-01-05',1),(3,'Tif','2022-05-09',1),(7,'Ilon','2018-06-08',3),(8,'Mike','2023-09-10',3),(9,'Sinner','2015-08-26',3),(10,'Gross','2014-09-30',4),(11,'Full','2020-02-04',4),(12,'Wanessa','2021-03-08',4),(13,'Pina','2022-09-22',5),(14,'Bob','2018-10-11',5),(15,'Aduard','2017-06-17',5),(16,'Masha','2013-08-16',6),(17,'Nitro','2021-12-12',6),(18,'Dc','2016-06-06',6),(19,'Square','2019-01-05',6),(37,'Kris','2020-01-06',3);
 /*!40000 ALTER TABLE `animals` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1250,7 +1250,7 @@ CREATE TABLE `young_animals` (
   PRIMARY KEY (`id`),
   KEY `id_idx` (`animals_id`),
   CONSTRAINT `id` FOREIGN KEY (`animals_id`) REFERENCES `animals` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1281,4 +1281,4 @@ USE `mensfriends`;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-12-07  8:36:24
+-- Dump completed on 2023-12-10  8:32:30

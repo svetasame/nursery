@@ -4,17 +4,22 @@
 $commands = new Commands();
 $registry = new AnimalRegistry();
 $view = new View();
+$dog = new Dogs('Konstantin', "2013-01-01");
+$registry->addAnimal($dog);
+$registry->printAnimals();
 
-$registry->addAnimal($dog = new Dogs('Funny', "2013-01-01"));
-$registry->addAnimal($dog2 = new Dogs('Tiffy', "2007-11-01"));
-$registry->addAnimal($cat = new Cats('Dana', "2020-04-11"));
-$registry->addAnimal($cat1 = new Cats('Ira', "2019-08-12"));
-$registry->addAnimal($hams = new Hamsters('Huha', "2017-06-14"));
-$registry->addAnimal($donkey = new Donkeys('Mark', "2006-10-15"));
-$registry->addAnimal($horse = new Horses('Ilon', "2016-02-25"));
-$registry->addAnimal($horse2 = new Horses('Griff', "2018-07-31"));
-$registry->addAnimal($camel = new Camels('Oliver', "2015-10-10"));
-$registry->addAnimal($camel1 = new Camels('Kris', "2021-09-05"));
+
+//
+//$registry->addAnimal($dog = new Dogs('Funny', "2013-01-01"));
+//$registry->addAnimal($dog2 = new Dogs('Tiffy', "2007-11-01"));
+//$registry->addAnimal($cat = new Cats('Dana', "2020-04-11"));
+//$registry->addAnimal($cat1 = new Cats('Ira', "2019-08-12"));
+//$registry->addAnimal($hams = new Hamsters('Huha', "2017-06-14"));
+//$registry->addAnimal($donkey = new Donkeys('Mark', "2006-10-15"));
+//$registry->addAnimal($horse = new Horses('Ilon', "2016-02-25"));
+//$registry->addAnimal($horse2 = new Horses('Griff', "2018-07-31"));
+//$registry->addAnimal($camel = new Camels('Oliver', "2015-10-10"));
+//$registry->addAnimal($camel1 = new Camels('Kris', "2021-09-05"));
 
 
 //choice ($registry,$view,$commands);

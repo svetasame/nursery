@@ -40,11 +40,10 @@ class AnimalRegistry
     //1 - добавить животное в реестр
     public function addAnimal(Animals $animal)
     {
-        $this->animals[] = $animal;
-        print_r($this);
-//        q('INSERT INTO `animals`.`animals` (`name`, `date_of_birth`, `kinds_id`) VALUES ("'.$this->name.'", "'.$this->date_of_birth.'",  '.$this->kind.')') ;
-
-        echo $animal->name. " Добавлено в регистр\n";
+        $result = q('INSERT INTO animals.animals (name, date_of_birth, kinds_id) VALUES ("'.$animal->name.'", "'.$animal->date_of_birth.'", '.$animal->kind.');');
+        if ($result) {
+            echo $animal->name. " Добавлено в регистр\n";
+        }
     }
 
     //2 - показать команды, которые знает животные
@@ -87,10 +86,18 @@ class AnimalRegistry
     //6 - вывести список животных
     public function printAnimals()
     {
-        echo "\nСписок животных в питомнике: ";
-        foreach ($this->animals as $animal) {
-            print_r($animal->getInfo());
-        }
+//        echo "\nСписок животных в питомнике: ";
+//        foreach ($this->animals as $animal) {
+//            print_r($animal->getInfo());
+//        }
+
+         $result = q('SELECT animals.name, kinds.kind, animals.date_of_birth 
+FROM animals LEFT JOIN kinds ON animals.kinds_id = kinds.id;');
+         if ($result) {
+             echo "\nСписок животных в питомнике: ";
+         }
+         $row = mysqli_fetch_assoc($result);
+         echo "my result <a href='data/" . htmlentities($row['classtype'], ENT_QUOTES, 'UTF-8') . ".php'>My account</a>";
 
     }
 
