@@ -7,7 +7,7 @@ class Donkeys extends Packs
 
     public function __construct($name, $date_of_birth) {
         parent::__construct($name, $date_of_birth);
-        $this->kind = 2;
+        $this->kind = 3;
     }
 
     public function getInfo()
