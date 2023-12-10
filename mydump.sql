@@ -352,7 +352,7 @@ UNLOCK TABLES;
 --
 
 /*!40000 ALTER TABLE `innodb_index_stats` DISABLE KEYS */;
-INSERT  IGNORE INTO `innodb_index_stats` VALUES ('animals','animal_command','PRIMARY','2023-12-07 04:32:45','n_diff_pfx01',29,1,'id'),('animals','animal_command','PRIMARY','2023-12-07 04:32:45','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','animal_command','PRIMARY','2023-12-07 04:32:45','size',1,NULL,'Number of pages in the index'),('animals','animal_command','fk_animal_command_animals1_idx','2023-12-07 04:32:45','n_diff_pfx01',16,1,'animals_id'),('animals','animal_command','fk_animal_command_animals1_idx','2023-12-07 04:32:45','n_diff_pfx02',29,1,'animals_id,id'),('animals','animal_command','fk_animal_command_animals1_idx','2023-12-07 04:32:45','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','animal_command','fk_animal_command_animals1_idx','2023-12-07 04:32:45','size',1,NULL,'Number of pages in the index'),('animals','animal_command','fk_animal_command_commands1_idx','2023-12-07 04:32:45','n_diff_pfx01',6,1,'commands_id'),('animals','animal_command','fk_animal_command_commands1_idx','2023-12-07 04:32:45','n_diff_pfx02',29,1,'commands_id,id'),('animals','animal_command','fk_animal_command_commands1_idx','2023-12-07 04:32:45','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','animal_command','fk_animal_command_commands1_idx','2023-12-07 04:32:45','size',1,NULL,'Number of pages in the index'),('animals','animal_command','id_UNIQUE','2023-12-07 04:32:45','n_diff_pfx01',29,1,'id'),('animals','animal_command','id_UNIQUE','2023-12-07 04:32:45','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','animal_command','id_UNIQUE','2023-12-07 04:32:45','size',1,NULL,'Number of pages in the index'),('animals','animals','PRIMARY','2023-12-07 04:32:55','n_diff_pfx01',16,1,'id'),('animals','animals','PRIMARY','2023-12-07 04:32:55','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','animals','PRIMARY','2023-12-07 04:32:55','size',1,NULL,'Number of pages in the index'),('animals','animals','fk_animals_kinds1_idx','2023-12-07 04:32:55','n_diff_pfx01',5,1,'kinds_id'),('animals','animals','fk_animals_kinds1_idx','2023-12-07 04:32:55','n_diff_pfx02',16,1,'kinds_id,id'),('animals','animals','fk_animals_kinds1_idx','2023-12-07 04:32:55','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','animals','fk_animals_kinds1_idx','2023-12-07 04:32:55','size',1,NULL,'Number of pages in the index'),('animals','animals','idnamesbase_UNIQUE','2023-12-07 04:32:55','n_diff_pfx01',16,1,'id'),('animals','animals','idnamesbase_UNIQUE','2023-12-07 04:32:55','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','animals','idnamesbase_UNIQUE','2023-12-07 04:32:55','size',1,NULL,'Number of pages in the index'),('animals','commands','PRIMARY','2023-12-07 04:23:08','n_diff_pfx01',6,1,'id'),('animals','commands','PRIMARY','2023-12-07 04:23:08','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','commands','PRIMARY','2023-12-07 04:23:08','size',1,NULL,'Number of pages in the index'),('animals','itogo','GEN_CLUST_INDEX','2023-12-07 08:31:35','n_diff_pfx01',16,1,'DB_ROW_ID'),('animals','itogo','GEN_CLUST_INDEX','2023-12-07 08:31:35','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','itogo','GEN_CLUST_INDEX','2023-12-07 08:31:35','size',1,NULL,'Number of pages in the index'),('animals','kinds','PRIMARY','2023-12-07 04:20:29','n_diff_pfx01',6,1,'id'),('animals','kinds','PRIMARY','2023-12-07 04:20:29','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','kinds','PRIMARY','2023-12-07 04:20:29','size',1,NULL,'Number of pages in the index'),('animals','kinds','fk_kinds_types1_idx','2023-12-07 04:20:29','n_diff_pfx01',2,1,'types_id'),('animals','kinds','fk_kinds_types1_idx','2023-12-07 04:20:29','n_diff_pfx02',6,1,'types_id,id'),('animals','kinds','fk_kinds_types1_idx','2023-12-07 04:20:29','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','kinds','fk_kinds_types1_idx','2023-12-07 04:20:29','size',1,NULL,'Number of pages in the index'),('animals','kinds','kindofanimal_UNIQUE','2023-12-07 04:20:29','n_diff_pfx01',6,1,'kind'),('animals','kinds','kindofanimal_UNIQUE','2023-12-07 04:20:29','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','kinds','kindofanimal_UNIQUE','2023-12-07 04:20:29','size',1,NULL,'Number of pages in the index'),('animals','types','PRIMARY','2023-12-07 04:18:59','n_diff_pfx01',2,1,'id'),('animals','types','PRIMARY','2023-12-07 04:18:59','n_diff_pfx02',2,1,'id,type'),('animals','types','PRIMARY','2023-12-07 04:18:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','types','PRIMARY','2023-12-07 04:18:59','size',1,NULL,'Number of pages in the index'),('animals','types','type_UNIQUE','2023-12-07 04:18:59','n_diff_pfx01',2,1,'type'),('animals','types','type_UNIQUE','2023-12-07 04:18:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','types','type_UNIQUE','2023-12-07 04:18:59','size',1,NULL,'Number of pages in the index'),('animals','young_animals','PRIMARY','2023-12-07 05:57:53','n_diff_pfx01',16,1,'id'),('animals','young_animals','PRIMARY','2023-12-07 05:57:53','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','young_animals','PRIMARY','2023-12-07 05:57:53','size',1,NULL,'Number of pages in the index'),('animals','young_animals','id_idx','2023-12-07 05:57:53','n_diff_pfx01',16,1,'animals_id'),('animals','young_animals','id_idx','2023-12-07 05:57:53','n_diff_pfx02',16,1,'animals_id,id'),('animals','young_animals','id_idx','2023-12-07 05:57:53','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','young_animals','id_idx','2023-12-07 05:57:53','size',1,NULL,'Number of pages in the index'),('mysql','component','PRIMARY','2023-12-06 08:27:25','n_diff_pfx01',0,1,'component_id'),('mysql','component','PRIMARY','2023-12-06 08:27:25','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','component','PRIMARY','2023-12-06 08:27:25','size',1,NULL,'Number of pages in the index'),('sys','sys_config','PRIMARY','2023-12-05 07:12:27','n_diff_pfx01',6,1,'variable'),('sys','sys_config','PRIMARY','2023-12-05 07:12:27','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sys','sys_config','PRIMARY','2023-12-05 07:12:27','size',1,NULL,'Number of pages in the index');
+INSERT  IGNORE INTO `innodb_index_stats` VALUES ('animals','animal_command','PRIMARY','2023-12-10 11:46:28','n_diff_pfx01',31,1,'id'),('animals','animal_command','PRIMARY','2023-12-10 11:46:28','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','animal_command','PRIMARY','2023-12-10 11:46:28','size',1,NULL,'Number of pages in the index'),('animals','animal_command','fk_animal_command_animals1_idx','2023-12-10 11:46:28','n_diff_pfx01',17,1,'animals_id'),('animals','animal_command','fk_animal_command_animals1_idx','2023-12-10 11:46:28','n_diff_pfx02',31,1,'animals_id,id'),('animals','animal_command','fk_animal_command_animals1_idx','2023-12-10 11:46:28','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','animal_command','fk_animal_command_animals1_idx','2023-12-10 11:46:28','size',1,NULL,'Number of pages in the index'),('animals','animal_command','fk_animal_command_commands1_idx','2023-12-10 11:46:28','n_diff_pfx01',6,1,'commands_id'),('animals','animal_command','fk_animal_command_commands1_idx','2023-12-10 11:46:28','n_diff_pfx02',31,1,'commands_id,id'),('animals','animal_command','fk_animal_command_commands1_idx','2023-12-10 11:46:28','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','animal_command','fk_animal_command_commands1_idx','2023-12-10 11:46:28','size',1,NULL,'Number of pages in the index'),('animals','animal_command','id_UNIQUE','2023-12-10 11:46:28','n_diff_pfx01',31,1,'id'),('animals','animal_command','id_UNIQUE','2023-12-10 11:46:28','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','animal_command','id_UNIQUE','2023-12-10 11:46:28','size',1,NULL,'Number of pages in the index'),('animals','animals','PRIMARY','2023-12-10 09:38:21','n_diff_pfx01',19,1,'id'),('animals','animals','PRIMARY','2023-12-10 09:38:21','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','animals','PRIMARY','2023-12-10 09:38:21','size',1,NULL,'Number of pages in the index'),('animals','animals','fk_animals_kinds1_idx','2023-12-10 09:38:21','n_diff_pfx01',5,1,'kinds_id'),('animals','animals','fk_animals_kinds1_idx','2023-12-10 09:38:21','n_diff_pfx02',19,1,'kinds_id,id'),('animals','animals','fk_animals_kinds1_idx','2023-12-10 09:38:21','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','animals','fk_animals_kinds1_idx','2023-12-10 09:38:21','size',1,NULL,'Number of pages in the index'),('animals','animals','idnamesbase_UNIQUE','2023-12-10 09:38:21','n_diff_pfx01',19,1,'id'),('animals','animals','idnamesbase_UNIQUE','2023-12-10 09:38:21','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','animals','idnamesbase_UNIQUE','2023-12-10 09:38:21','size',1,NULL,'Number of pages in the index'),('animals','commands','PRIMARY','2023-12-07 04:23:08','n_diff_pfx01',6,1,'id'),('animals','commands','PRIMARY','2023-12-07 04:23:08','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','commands','PRIMARY','2023-12-07 04:23:08','size',1,NULL,'Number of pages in the index'),('animals','itogo','GEN_CLUST_INDEX','2023-12-10 11:56:09','n_diff_pfx01',19,1,'DB_ROW_ID'),('animals','itogo','GEN_CLUST_INDEX','2023-12-10 11:56:09','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','itogo','GEN_CLUST_INDEX','2023-12-10 11:56:09','size',1,NULL,'Number of pages in the index'),('animals','kinds','PRIMARY','2023-12-07 04:20:29','n_diff_pfx01',6,1,'id'),('animals','kinds','PRIMARY','2023-12-07 04:20:29','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','kinds','PRIMARY','2023-12-07 04:20:29','size',1,NULL,'Number of pages in the index'),('animals','kinds','fk_kinds_types1_idx','2023-12-07 04:20:29','n_diff_pfx01',2,1,'types_id'),('animals','kinds','fk_kinds_types1_idx','2023-12-07 04:20:29','n_diff_pfx02',6,1,'types_id,id'),('animals','kinds','fk_kinds_types1_idx','2023-12-07 04:20:29','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','kinds','fk_kinds_types1_idx','2023-12-07 04:20:29','size',1,NULL,'Number of pages in the index'),('animals','kinds','kindofanimal_UNIQUE','2023-12-07 04:20:29','n_diff_pfx01',6,1,'kind'),('animals','kinds','kindofanimal_UNIQUE','2023-12-07 04:20:29','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','kinds','kindofanimal_UNIQUE','2023-12-07 04:20:29','size',1,NULL,'Number of pages in the index'),('animals','types','PRIMARY','2023-12-07 04:18:59','n_diff_pfx01',2,1,'id'),('animals','types','PRIMARY','2023-12-07 04:18:59','n_diff_pfx02',2,1,'id,type'),('animals','types','PRIMARY','2023-12-07 04:18:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','types','PRIMARY','2023-12-07 04:18:59','size',1,NULL,'Number of pages in the index'),('animals','types','type_UNIQUE','2023-12-07 04:18:59','n_diff_pfx01',2,1,'type'),('animals','types','type_UNIQUE','2023-12-07 04:18:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','types','type_UNIQUE','2023-12-07 04:18:59','size',1,NULL,'Number of pages in the index'),('animals','young_animals','PRIMARY','2023-12-07 05:57:53','n_diff_pfx01',16,1,'id'),('animals','young_animals','PRIMARY','2023-12-07 05:57:53','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','young_animals','PRIMARY','2023-12-07 05:57:53','size',1,NULL,'Number of pages in the index'),('animals','young_animals','id_idx','2023-12-07 05:57:53','n_diff_pfx01',16,1,'animals_id'),('animals','young_animals','id_idx','2023-12-07 05:57:53','n_diff_pfx02',16,1,'animals_id,id'),('animals','young_animals','id_idx','2023-12-07 05:57:53','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('animals','young_animals','id_idx','2023-12-07 05:57:53','size',1,NULL,'Number of pages in the index'),('mysql','component','PRIMARY','2023-12-06 08:27:25','n_diff_pfx01',0,1,'component_id'),('mysql','component','PRIMARY','2023-12-06 08:27:25','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','component','PRIMARY','2023-12-06 08:27:25','size',1,NULL,'Number of pages in the index'),('sys','sys_config','PRIMARY','2023-12-05 07:12:27','n_diff_pfx01',6,1,'variable'),('sys','sys_config','PRIMARY','2023-12-05 07:12:27','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sys','sys_config','PRIMARY','2023-12-05 07:12:27','size',1,NULL,'Number of pages in the index');
 /*!40000 ALTER TABLE `innodb_index_stats` ENABLE KEYS */;
 
 --
@@ -360,7 +360,7 @@ INSERT  IGNORE INTO `innodb_index_stats` VALUES ('animals','animal_command','PRI
 --
 
 /*!40000 ALTER TABLE `innodb_table_stats` DISABLE KEYS */;
-INSERT  IGNORE INTO `innodb_table_stats` VALUES ('animals','animal_command','2023-12-07 04:32:45',29,1,3),('animals','animals','2023-12-07 04:32:55',16,1,2),('animals','commands','2023-12-07 04:23:08',6,1,0),('animals','itogo','2023-12-07 08:31:35',16,1,0),('animals','kinds','2023-12-07 04:20:29',6,1,2),('animals','types','2023-12-07 04:18:59',2,1,1),('animals','young_animals','2023-12-07 05:57:53',16,1,1),('mysql','component','2023-12-06 08:27:25',0,1,0),('sys','sys_config','2023-12-05 07:12:27',6,1,0);
+INSERT  IGNORE INTO `innodb_table_stats` VALUES ('animals','animal_command','2023-12-10 11:46:28',31,1,3),('animals','animals','2023-12-10 09:38:21',19,1,2),('animals','commands','2023-12-07 04:23:08',6,1,0),('animals','itogo','2023-12-10 11:56:09',19,1,0),('animals','kinds','2023-12-07 04:20:29',6,1,2),('animals','types','2023-12-07 04:18:59',2,1,1),('animals','young_animals','2023-12-07 05:57:53',16,1,1),('mysql','component','2023-12-06 08:27:25',0,1,0),('sys','sys_config','2023-12-05 07:12:27',6,1,0);
 /*!40000 ALTER TABLE `innodb_table_stats` ENABLE KEYS */;
 
 --
@@ -1089,7 +1089,7 @@ CREATE TABLE `animal_command` (
   KEY `fk_animal_command_commands1_idx` (`commands_id`),
   CONSTRAINT `fk_animal_command_animals1` FOREIGN KEY (`animals_id`) REFERENCES `animals` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `fk_animal_command_commands1` FOREIGN KEY (`commands_id`) REFERENCES `commands` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=52 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1098,7 +1098,7 @@ CREATE TABLE `animal_command` (
 
 LOCK TABLES `animal_command` WRITE;
 /*!40000 ALTER TABLE `animal_command` DISABLE KEYS */;
-INSERT INTO `animal_command` VALUES (1,1,2),(2,1,1),(3,2,3),(4,2,4),(5,2,1),(6,3,2),(7,3,3),(8,3,1),(13,7,4),(14,8,4),(15,9,5),(16,9,6),(17,10,6),(18,10,3),(19,10,2),(20,11,2),(21,11,1),(22,12,1),(23,13,2),(24,14,1),(25,15,6),(26,15,5),(27,16,4),(28,16,2),(29,17,1),(30,17,4),(31,17,2),(32,18,5),(33,19,6);
+INSERT INTO `animal_command` VALUES (1,1,2),(2,1,1),(3,2,3),(4,2,4),(5,2,1),(6,3,2),(7,3,3),(8,3,1),(13,7,4),(14,8,4),(15,9,5),(16,9,6),(17,10,6),(18,10,3),(19,10,2),(20,11,2),(21,11,1),(22,12,1),(23,13,2),(24,14,1),(25,15,6),(26,15,5),(27,16,4),(28,16,2),(29,17,1),(30,17,4),(31,17,2),(32,18,5),(33,19,6),(56,14,3),(57,49,5),(58,49,3),(59,49,4),(60,50,3);
 /*!40000 ALTER TABLE `animal_command` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1118,7 +1118,7 @@ CREATE TABLE `animals` (
   UNIQUE KEY `idnamesbase_UNIQUE` (`id`),
   KEY `fk_animals_kinds1_idx` (`kinds_id`),
   CONSTRAINT `fk_animals_kinds1` FOREIGN KEY (`kinds_id`) REFERENCES `kinds` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1127,7 +1127,7 @@ CREATE TABLE `animals` (
 
 LOCK TABLES `animals` WRITE;
 /*!40000 ALTER TABLE `animals` DISABLE KEYS */;
-INSERT INTO `animals` VALUES (1,'Funny','2000-01-01',1),(2,'Crossy','2023-01-05',1),(3,'Tif','2022-05-09',1),(7,'Ilon','2018-06-08',3),(8,'Mike','2023-09-10',3),(9,'Sinner','2015-08-26',3),(10,'Gross','2014-09-30',4),(11,'Full','2020-02-04',4),(12,'Wanessa','2021-03-08',4),(13,'Pina','2022-09-22',5),(14,'Bob','2018-10-11',5),(15,'Aduard','2017-06-17',5),(16,'Masha','2013-08-16',6),(17,'Nitro','2021-12-12',6),(18,'Dc','2016-06-06',6),(19,'Square','2019-01-05',6),(37,'Kris','2020-01-06',3);
+INSERT INTO `animals` VALUES (1,'Funny','2000-01-01',1),(2,'Crossy','2023-01-05',1),(3,'Tif','2022-05-09',1),(7,'Ilon','2018-06-08',3),(8,'Mike','2023-09-10',3),(9,'Sinner','2015-08-26',3),(10,'Gross','2014-09-30',4),(11,'Full','2020-02-04',4),(12,'Wanessa','2021-03-08',4),(13,'Pina','2022-09-22',5),(14,'Bob','2018-10-11',5),(15,'Aduard','2017-06-17',5),(16,'Masha','2013-08-16',6),(17,'Nitro','2021-12-12',6),(18,'Dc','2016-06-06',6),(19,'Square','2019-01-05',6),(37,'Kris','2020-01-06',3),(48,'Konstantin','2013-01-01',5),(49,'Sergey','2013-01-01',5),(50,'Sveta','1992-06-19',6),(51,'','2000-01-01',5),(53,'Train','2015-09-18',4);
 /*!40000 ALTER TABLE `animals` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1163,13 +1163,13 @@ DROP TABLE IF EXISTS `itogo`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `itogo` (
-  `id` int NOT NULL DEFAULT '0',
-  `имя` varchar(45) NOT NULL,
-  `вид` varchar(45),
-  `тип` varchar(45),
-  `дата рождения` date NOT NULL,
-  `команды` text,
-  `возраст` int
+  `animal_id` int NOT NULL DEFAULT '0',
+  `animal_name` varchar(45) NOT NULL,
+  `animal_kind` varchar(45),
+  `animal_type` varchar(45),
+  `animal_birthday` date NOT NULL,
+  `animal_commands` text,
+  `animal_age` int
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -1179,7 +1179,7 @@ CREATE TABLE `itogo` (
 
 LOCK TABLES `itogo` WRITE;
 /*!40000 ALTER TABLE `itogo` DISABLE KEYS */;
-INSERT INTO `itogo` VALUES (1,'Funny','horses','packs','2000-01-01','name, near',287),(2,'Crossy','horses','packs','2023-01-05','lay, name, sit',11),(3,'Tif','horses','packs','2022-05-09','name, near, sit',18),(7,'Ilon','donkeys','packs','2018-06-08','lay',65),(8,'Mike','donkeys','packs','2023-09-10','lay',2),(9,'Sinner','donkeys','packs','2015-08-26','faster, up',99),(10,'Gross','cats','pets','2014-09-30','faster, near, sit',110),(11,'Full','cats','pets','2020-02-04','name, near',46),(12,'Wanessa','cats','pets','2021-03-08','name',32),(13,'Pina','dogs','pets','2022-09-22','near',14),(14,'Bob','dogs','pets','2018-10-11','name',61),(15,'Aduard','dogs','pets','2017-06-17','faster, up',77),(16,'Masha','hamsters','pets','2013-08-16','lay, near',123),(17,'Nitro','hamsters','pets','2021-12-12','lay, name, near',23),(18,'Dc','hamsters','pets','2016-06-06','up',90),(19,'Square','hamsters','pets','2019-01-05','faster',59);
+INSERT INTO `itogo` VALUES (1,'Funny','horses','packs','2000-01-01','name, near',287),(2,'Crossy','horses','packs','2023-01-05','lay, name, sit',11),(3,'Tif','horses','packs','2022-05-09','name, near, sit',18),(7,'Ilon','donkeys','packs','2018-06-08','lay',65),(8,'Mike','donkeys','packs','2023-09-10','lay',2),(9,'Sinner','donkeys','packs','2015-08-26','faster, up',99),(10,'Gross','cats','pets','2014-09-30','faster, near, sit',110),(11,'Full','cats','pets','2020-02-04','name, near',46),(12,'Wanessa','cats','pets','2021-03-08','name',32),(13,'Pina','dogs','pets','2022-09-22','near',14),(14,'Bob','dogs','pets','2018-10-11','name, sit',61),(15,'Aduard','dogs','pets','2017-06-17','faster, up',77),(16,'Masha','hamsters','pets','2013-08-16','lay, near',123),(17,'Nitro','hamsters','pets','2021-12-12','lay, name, near',23),(18,'Dc','hamsters','pets','2016-06-06','up',90),(19,'Square','hamsters','pets','2019-01-05','faster',59),(37,'Kris','donkeys','packs','2020-01-06',NULL,NULL),(48,'Konstantin','dogs','pets','2013-01-01',NULL,NULL),(49,'Sergey','dogs','pets','2013-01-01','lay, sit, up',NULL);
 /*!40000 ALTER TABLE `itogo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1198,7 +1198,7 @@ CREATE TABLE `kinds` (
   UNIQUE KEY `kindofanimal_UNIQUE` (`kind`),
   KEY `fk_kinds_types1_idx` (`types_id`),
   CONSTRAINT `fk_kinds_types1` FOREIGN KEY (`types_id`) REFERENCES `types` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1207,7 +1207,7 @@ CREATE TABLE `kinds` (
 
 LOCK TABLES `kinds` WRITE;
 /*!40000 ALTER TABLE `kinds` DISABLE KEYS */;
-INSERT INTO `kinds` VALUES (1,'horses',1),(3,'donkeys',1),(4,'cats',2),(5,'dogs',2),(6,'hamsters',2);
+INSERT INTO `kinds` VALUES (1,'horses',1),(3,'donkeys',1),(4,'cats',2),(5,'dogs',2),(6,'hamsters',2),(7,'camels',1);
 /*!40000 ALTER TABLE `kinds` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1281,4 +1281,4 @@ USE `mensfriends`;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-12-10  8:32:30
+-- Dump completed on 2023-12-10 12:26:17
