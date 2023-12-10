@@ -1,0 +1,152 @@
+svetasame@of-ecom01:/mnt/c/Users/KovalenkoS/Desktop/geekbrains/nursery$ cat > Pets.txt
+собаки
+кошки
+хомяки
+^C
+svetasame@of-ecom01:/mnt/c/Users/KovalenkoS/Desktop/geekbrains/nursery$ cat > Pack.txt
+лошади
+ослы
+верблюды
+^C
+svetasame@of-ecom01:/mnt/c/Users/KovalenkoS/Desktop/geekbrains/nursery$ cat Pack.txt
+лошади
+ослы
+верблюды
+svetasame@of-ecom01:/mnt/c/Users/KovalenkoS/Desktop/geekbrains/nursery$ cat Pets.txt
+собаки
+кошки
+хомяки
+svetasame@of-ecom01:/mnt/c/Users/KovalenkoS/Desktop/geekbrains/nursery$ cat Pets.txt Pack.txt > Humanfriends.txt
+svetasame@of-ecom01:/mnt/c/Users/KovalenkoS/Desktop/geekbrains/nursery$ cat Humanfriends.txt
+собаки
+кошки
+хомяки
+лошади
+ослы
+верблюды
+svetasame@of-ecom01:/mnt/c/Users/KovalenkoS/Desktop/geekbrains/nursery$ mkdir friends
+svetasame@of-ecom01:/mnt/c/Users/KovalenkoS/Desktop/geekbrains/nursery/friends$ cd ..
+svetasame@of-ecom01:/mnt/c/Users/KovalenkoS/Desktop/geekbrains/nursery$ mv HumanFriends.txt /mnt/c/Users/KovalenkoS/Desktop/geekbrains/nursery/friends/
+svetasame@of-ecom01:/mnt/c/Users/KovalenkoS/Desktop/geekbrains/nursery$ cd /mnt/c/Users/KovalenkoS/Desktop/geekbrains/nursery/friends/
+svetasame@of-ecom01:/mnt/c/Users/KovalenkoS/Desktop/geekbrains/nursery/friends$ cat HumanFriends.txt
+собаки
+кошки
+хомяки
+лошади
+ослы
+верблюды
+
+svetasame@of-ecom01:/mnt/c/Users/KovalenkoS/Desktop/geekbrains/nursery/friends$ sudo apt install mysql-server
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+mysql-server is already the newest version (8.0.35-0ubuntu0.22.04.1).
+The following package was automatically installed and is no longer required:
+  ubuntu-fan
+Use 'sudo apt autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+svetasame@of-ecom01:/mnt/c/Users/KovalenkoS/Desktop/geekbrains/nursery/friends$ sudo apt remove mysql-server
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libcgi-fast-perl libcgi-pm-perl libclone-perl libencode-locale-perl libevent-pthreads-2.1-7 libfcgi-bin libfcgi-perl libfcgi0ldbl libhtml-parser-perl libhtml-tagset-perl
+  libhtml-template-perl libhttp-date-perl libhttp-message-perl libio-html-perl liblwp-mediatypes-perl libmecab2 libprotobuf-lite23 libtimedate-perl liburi-perl mecab-ipadic
+  mecab-ipadic-utf8 mecab-utils mysql-client-8.0 mysql-client-core-8.0 mysql-common mysql-server-8.0 mysql-server-core-8.0 ubuntu-fan
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  mysql-server
+0 upgraded, 0 newly installed, 1 to remove and 0 not upgraded.
+After this operation, 35.8 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 28929 files and directories currently installed.)
+Removing mysql-server (8.0.35-0ubuntu0.22.04.1) ...
+
+svetasame@of-ecom01:/tmp$ wget https://dev.mysql.com/get/mysql-apt-config_0.8.10-1_all.deb
+--2023-12-03 22:21:40--  https://dev.mysql.com/get/mysql-apt-config_0.8.10-1_all.deb
+Resolving dev.mysql.com (dev.mysql.com)... 184.51.238.43, 2001:2030:21:1a9::2e31, 2001:2030:21:19e::2e31
+Connecting to dev.mysql.com (dev.mysql.com)|184.51.238.43|:443... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://repo.mysql.com//mysql-apt-config_0.8.10-1_all.deb [following]
+--2023-12-03 22:21:41--  https://repo.mysql.com//mysql-apt-config_0.8.10-1_all.deb
+Resolving repo.mysql.com (repo.mysql.com)... 23.210.173.94, 2a02:26f0:9500:280::1d68, 2a02:26f0:9500:28c::1d68
+Connecting to repo.mysql.com (repo.mysql.com)|23.210.173.94|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 35970 (35K) [application/x-debian-package]
+Saving to: ‘mysql-apt-config_0.8.10-1_all.deb’
+
+mysql-apt-config_0.8.10-1_all.deb            100%[==============================================================================================>]  35.13K   103KB/s    in 0.3s
+
+2023-12-03 22:21:43 (103 KB/s) - ‘mysql-apt-config_0.8.10-1_all.deb’ saved [35970/35970]
+
+svetasame@of-ecom01:/tmp$
+
+svetasame@of-ecom01:/tmp$ sudo apt install mysql-server
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  ubuntu-fan
+Use 'sudo apt autoremove' to remove it.
+The following NEW packages will be installed:
+  mysql-server
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 9464 B of archives.
+After this operation, 35.8 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-server all 8.0.35-0ubuntu0.22.04.1 [9464 B]
+Fetched 9464 B in 0s (19.9 kB/s)
+Selecting previously unselected package mysql-server.
+(Reading database ... 28932 files and directories currently installed.)
+Preparing to unpack .../mysql-server_8.0.35-0ubuntu0.22.04.1_all.deb ...
+Unpacking mysql-server (8.0.35-0ubuntu0.22.04.1) ...
+Setting up mysql-server (8.0.35-0ubuntu0.22.04.1) ...
+svetasame@of-ecom01:/tmp$ sudo service mysql status
+ * MySQL is stopped.
+
+svetasame@of-ecom01:/tmp$ sudo service mysql start
+ * Starting MySQL database server mysqld                                                                                                                                            su: warning: cannot change directory to /nonexistent: No such file or directory
+                                                                                                                                                                             [ OK ]
+svetasame@of-ecom01:/tmp$ sudo service mysql status
+ * /usr/bin/mysqladmin  Ver 8.0.35-0ubuntu0.22.04.1 for Linux on x86_64 ((Ubuntu))
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Server version          8.0.35-0ubuntu0.22.04.1
+Protocol version        10
+Connection              Localhost via UNIX socket
+UNIX socket             /var/run/mysqld/mysqld.sock
+Uptime:                 12 sec
+
+Threads: 2  Questions: 8  Slow queries: 0  Opens: 438  Flush tables: 3  Open tables: 27  Queries per second avg: 0.666
+svetasame@of-ecom01:/tmp$  dpkg -l | grep -i mysql
+ii  mysql-apt-config               0.8.10-1                                all          Auto configuration for MySQL APT Repo.
+ii  mysql-client-8.0               8.0.35-0ubuntu0.22.04.1                 amd64        MySQL database client binaries
+ii  mysql-client-core-8.0          8.0.35-0ubuntu0.22.04.1                 amd64        MySQL database core client binaries
+ii  mysql-common                   5.8+1.0.8                               all          MySQL database common files, e.g. /etc/mysql/my.cnf
+ii  mysql-server                   8.0.35-0ubuntu0.22.04.1                 all          MySQL database server (metapackage depending on the latest version)
+ii  mysql-server-8.0               8.0.35-0ubuntu0.22.04.1                 amd64        MySQL database server binaries and system database setup
+ii  mysql-server-core-8.0          8.0.35-0ubuntu0.22.04.1                 amd64        MySQL database server binaries
+
+svetasame@of-ecom01:/tmp$ sudo apt-get remove mysql-server-8.0
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libcgi-fast-perl libcgi-pm-perl libclone-perl libencode-locale-perl libevent-pthreads-2.1-7 libfcgi-bin libfcgi-perl libfcgi0ldbl libhtml-parser-perl libhtml-tagset-perl
+  libhtml-template-perl libhttp-date-perl libhttp-message-perl libio-html-perl liblwp-mediatypes-perl libmecab2 libprotobuf-lite23 libtimedate-perl liburi-perl mecab-ipadic
+  mecab-ipadic-utf8 mecab-utils mysql-client-8.0 mysql-client-core-8.0 mysql-common mysql-server-core-8.0 ubuntu-fan
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  mysql-server mysql-server-8.0
+0 upgraded, 0 newly installed, 2 to remove and 0 not upgraded.
+After this operation, 1617 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+(Reading database ... 28934 files and directories currently installed.)
+Removing mysql-server (8.0.35-0ubuntu0.22.04.1) ...
+Removing mysql-server-8.0 (8.0.35-0ubuntu0.22.04.1) ...
+invoke-rc.d: could not determine current runlevel
+ * Stopping MySQL database server mysqld                                                                                                                                     [ OK ]
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
